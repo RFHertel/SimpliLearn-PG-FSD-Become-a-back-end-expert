@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>FlyAway</display-name>
+  <welcome-file-list>
+    <welcome-file>Asssessionlogin.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <context-param>
+    <param-name>b1</param-name>
+    <param-value> 1 </param-value>
+  </context-param>
+  <context-param>
+    <param-name>b2</param-name>
+    <param-value> 2 </param-value>
+  </context-param>  
+  <context-param>
+    <param-name>b3</param-name>
+    <param-value> 3 </param-value>
+  </context-param>    
+  
+  <servlet>
+    <servlet-name>OnServletConfig1</servlet-name>
+    <servlet-class>java.app.program.OnServletConfigA</servlet-class>
+    <init-param>
+      <param-name>a1</param-name>
+      <param-value>4</param-value>
+    </init-param>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>OnServletConfig1</servlet-name>
+    <url-pattern>/onSCG2</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>PostHandler</servlet-name>
+    <url-pattern>/posthandler</url-pattern>
+  </servlet-mapping>
+  
+    <!-- End -->
+</web-app>

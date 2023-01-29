@@ -16,7 +16,7 @@
      url="jdbc:mysql://localhost:3306/db_world"  
      user="root"  password="root"/>
 
-<form action="AssForgotPassword4.jsp" method="post">
+<form action="AssForgotPasswordAdminAccepted.jsp" method="post">
   Admin Name <input name="userNameAdmin" id="userNameAdmin" maxlength=40><br>
   Admin Password <input type="password" name="passwordAdmin" id="passwordAdmin" maxlength="10"><br>
   <button>Admin Password Enter</button>
